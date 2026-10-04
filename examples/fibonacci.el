@@ -1,0 +1,44 @@
+INCANTATION fib n
+
+  FOG GATE n YIELDS TO 2
+    OFFER REMEMBRANCE n
+  LIFT FOG
+
+  INSCRIBE a 0
+  INSCRIBE b 1
+  INSCRIBE i 2
+
+  ERDTREE LOOP
+    FOG GATE i EXCEEDS n
+      FELL THE TREE
+    LIFT FOG
+    INSCRIBE tmp b
+    KINDLE tmp a
+    INSCRIBE a b
+    INSCRIBE b tmp
+    KINDLE i 1
+  ROOTS END
+
+  OFFER REMEMBRANCE b
+
+GRACE BESTOWED
+
+
+SEEK GRACE
+
+  ECHO "~ The Fibonacci Remembrance ~"
+
+  INSCRIBE idx 0
+
+  ERDTREE LOOP
+    FOG GATE idx EXCEEDS 14
+      FELL THE TREE
+    LIFT FOG
+
+    CAST fib idx
+    ECHO _result
+
+    KINDLE idx 1
+  ROOTS END
+
+OFFER REMEMBRANCE

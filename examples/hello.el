@@ -1,0 +1,5 @@
+SEEK GRACE
+
+ECHO "Greetings, Tarnished."
+
+OFFER REMEMBRANCE
